@@ -344,7 +344,7 @@ PHP;
     ) {
         $class->getParentClass()->willReturn('stdClass');
         $class->getInterfaces()->willReturn([]);
-        $class->getProperties()->willReturn([]);
+        $class->getPropertyNodes()->willReturn([]);
         $class->getMethods()->willReturn(array($method));
         $class->isReadOnly()->willReturn(false);
 
@@ -386,7 +386,7 @@ PHP;
     ) {
         $class->getParentClass()->willReturn('stdClass');
         $class->getInterfaces()->willReturn([]);
-        $class->getProperties()->willReturn([]);
+        $class->getPropertyNodes()->willReturn([]);
         $class->getMethods()->willReturn(array($method));
         $class->isReadOnly()->willReturn(false);
 

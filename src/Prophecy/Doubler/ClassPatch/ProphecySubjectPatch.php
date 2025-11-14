@@ -49,14 +49,14 @@ class ProphecySubjectPatch implements ClassPatchInterface
         $node->addProperty(
             'objectProphecyClosureContainer',
             'private',
-            new PropertyTypeNode('Prophecy\Doubler\ClassPatch\ProphecySubjectPatch\ObjectProphecyClosureContainer')
+            new PropertyTypeNode('Prophecy\Doubler\ObjectProphecyClosureContainer')
         );
 
         foreach ($node->getMethods() as $name => $method) {
             if ('__construct' === strtolower($name)) {
                 $method->setCode(
                     $method->getCode() .
-                    '$this->objectProphecyClosureContainer = new \Prophecy\Doubler\ClassPatch\ProphecySubjectPatch\ObjectProphecyClosureContainer();'
+                    '$this->objectProphecyClosureContainer = new \Prophecy\Doubler\ObjectProphecyClosureContainer();'
                 );
 
                 continue;
