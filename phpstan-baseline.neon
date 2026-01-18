@@ -65,3 +65,9 @@ parameters:
 			identifier: offsetAccess.invalidOffset
 			count: 1
 			path: src/Prophecy/Util/ExportUtil.php
+
+		-
+			message: '#^Call to an undefined method phpDocumentor\\Reflection\\DocBlock\\Tags\\Method\:\:getArguments\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/Prophecy/Doubler/ClassPatch/MagicCallPatch.php
