@@ -1,6 +1,13 @@
 Unreleased
 ==========
 
+1.25.0
+======
+
+**Added:**
+
+* Add support for PHPUnit 13 (@Jean85)
+
 1.24.0
 ======
 
