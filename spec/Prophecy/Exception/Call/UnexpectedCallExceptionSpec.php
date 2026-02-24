@@ -4,7 +4,6 @@ namespace spec\Prophecy\Exception\Call;
 
 use PhpSpec\ObjectBehavior;
 use Prophecy\Prophecy\ObjectProphecy;
-use spec\Prophecy\Exception\Prophecy\Prophecy;
 
 class UnexpectedCallExceptionSpec extends ObjectBehavior
 {

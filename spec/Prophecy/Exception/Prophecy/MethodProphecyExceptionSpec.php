@@ -5,7 +5,6 @@ namespace spec\Prophecy\Exception\Prophecy;
 use PhpSpec\ObjectBehavior;
 use Prophecy\Prophecy\MethodProphecy;
 use Prophecy\Prophecy\ObjectProphecy;
-use spec\Prophecy\Exception\Prophecy;
 
 class MethodProphecyExceptionSpec extends ObjectBehavior
 {

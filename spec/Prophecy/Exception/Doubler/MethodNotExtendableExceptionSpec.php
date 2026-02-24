@@ -3,7 +3,6 @@
 namespace spec\Prophecy\Exception\Doubler;
 
 use PhpSpec\ObjectBehavior;
-use spec\Prophecy\Exception\Prophecy;
 
 class MethodNotExtendableExceptionSpec extends ObjectBehavior
 {

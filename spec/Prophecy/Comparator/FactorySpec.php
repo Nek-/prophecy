@@ -4,7 +4,6 @@ namespace spec\Prophecy\Comparator;
 
 use PhpSpec\Exception\Example\SkippingException;
 use PhpSpec\ObjectBehavior;
-use Prophecy\Argument;
 use Prophecy\Comparator\Factory;
 use SebastianBergmann\Comparator\Factory as BaseFactory;
 

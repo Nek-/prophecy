@@ -2,14 +2,12 @@
 
 namespace spec\Prophecy\Prophecy;
 
-use PhpSpec\Exception\Example\SkippingException;
 use PhpSpec\ObjectBehavior;
 use Prophecy\Argument;
 use Prophecy\Argument\ArgumentsWildcard;
 use Prophecy\Call\Call;
 use Prophecy\Exception\Prophecy\MethodProphecyException;
 use Prophecy\Prediction\PredictionInterface;
-use Prophecy\Promise\CallbackPromise;
 use Prophecy\Promise\PromiseInterface;
 use Prophecy\Prophecy\ObjectProphecy;
 use Prophecy\Prophecy\ProphecySubjectInterface;

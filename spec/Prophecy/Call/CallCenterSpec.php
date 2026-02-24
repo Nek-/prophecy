@@ -3,7 +3,6 @@
 namespace spec\Prophecy\Call;
 
 use PhpSpec\ObjectBehavior;
-use Prophecy\Exception\Call\UnexpectedCallException;
 use Prophecy\Promise\PromiseInterface;
 use Prophecy\Prophecy\MethodProphecy;
 use Prophecy\Prophecy\ObjectProphecy;
