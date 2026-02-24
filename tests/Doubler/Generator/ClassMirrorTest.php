@@ -11,7 +11,6 @@ use Prophecy\Doubler\Generator\Node\ReturnTypeNode;
 use Prophecy\Doubler\Generator\Node\Type\BuiltinType;
 use Prophecy\Doubler\Generator\Node\Type\IntersectionType;
 use Prophecy\Doubler\Generator\Node\Type\ObjectType;
-use Prophecy\Doubler\Generator\Node\Type\SimpleType;
 use Prophecy\Doubler\Generator\Node\Type\UnionType;
 use Prophecy\Exception\Doubler\ClassMirrorException;
 use Prophecy\Exception\InvalidArgumentException;

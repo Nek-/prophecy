@@ -2,9 +2,7 @@
 
 namespace spec\Prophecy\Doubler\Generator;
 
-use phpDocumentor\Reflection\DocBlock\Tags\Method;
 use PhpSpec\ObjectBehavior;
-use Prophecy\Argument;
 use Prophecy\Doubler\Generator\Node\ArgumentNode;
 use Prophecy\Doubler\Generator\Node\ArgumentTypeNode;
 use Prophecy\Doubler\Generator\Node\ClassNode;
@@ -13,7 +11,6 @@ use Prophecy\Doubler\Generator\Node\ReturnTypeNode;
 use Prophecy\Doubler\Generator\Node\Type\BuiltinType;
 use Prophecy\Doubler\Generator\Node\Type\IntersectionType;
 use Prophecy\Doubler\Generator\Node\Type\ObjectType;
-use Prophecy\Doubler\Generator\Node\Type\SimpleType;
 use Prophecy\Doubler\Generator\Node\Type\UnionType;
 
 class ClassCodeGeneratorSpec extends ObjectBehavior

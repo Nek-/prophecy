@@ -2,10 +2,7 @@
 
 namespace spec\Prophecy\Doubler\ClassPatch;
 
-use PhpSpec\Exception\Example\SkippingException;
-use Prophecy\Doubler\ClassPatch\ThrowablePatch;
 use PhpSpec\ObjectBehavior;
-use Prophecy\Argument;
 use Prophecy\Doubler\Generator\Node\ClassNode;
 
 class ThrowablePatchSpec extends ObjectBehavior

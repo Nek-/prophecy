@@ -4,7 +4,6 @@ namespace spec\Prophecy\Exception\Doubler;
 
 use PhpSpec\ObjectBehavior;
 use Prophecy\Doubler\Generator\Node\ClassNode;
-use spec\Prophecy\Exception\Prophecy;
 
 class ClassCreatorExceptionSpec extends ObjectBehavior
 {

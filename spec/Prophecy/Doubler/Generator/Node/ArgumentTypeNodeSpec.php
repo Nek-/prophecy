@@ -3,7 +3,6 @@
 namespace spec\Prophecy\Doubler\Generator\Node;
 
 use PhpSpec\ObjectBehavior;
-use Prophecy\Doubler\Generator\Node\ArgumentTypeNode;
 use Prophecy\Exception\Doubler\DoubleException;
 
 class ArgumentTypeNodeSpec extends ObjectBehavior

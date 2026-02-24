@@ -5,7 +5,6 @@ namespace spec\Prophecy\Doubler\Generator\Node\Type;
 use PhpSpec\ObjectBehavior;
 use Prophecy\Doubler\Generator\Node\Type\BuiltinType;
 use Prophecy\Doubler\Generator\Node\Type\ObjectType;
-use Prophecy\Doubler\Generator\Node\Type\SimpleType;
 use Prophecy\Doubler\Generator\Node\Type\TypeInterface;
 use Prophecy\Doubler\Generator\Node\Type\UnionType;
 use Prophecy\Exception\Doubler\DoubleException;
