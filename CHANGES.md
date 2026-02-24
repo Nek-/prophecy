@@ -1,6 +1,13 @@
 Unreleased
 ==========
 
+1.26.0
+======
+
+**Added:**
+
+* Add support for `phpdocumentor/reflection-docblock` v6 (@mspirkov)
+
 1.25.0
 ======
 
