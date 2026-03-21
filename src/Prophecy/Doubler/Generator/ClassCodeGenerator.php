@@ -62,7 +62,7 @@ class ClassCodeGenerator
 
     private function generateProperty(Node\PropertyNode $property): string
     {
-        $type = ($type = $this->generateTypes($property->getTypeNode())) ? $type.' ' : '';
+        $type = ($type = ((string) $property->getTypeNode())) ? $type.' ' : '';
 
         $php = sprintf("%s %s%s;",
             $property->getVisibility(),

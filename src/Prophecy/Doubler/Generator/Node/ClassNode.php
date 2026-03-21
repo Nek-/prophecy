@@ -11,6 +11,7 @@
 
 namespace Prophecy\Doubler\Generator\Node;
 
+use Prophecy\Doubler\Generator\Node\Type\BuiltinType;
 use Prophecy\Exception\Doubler\MethodNotExtendableException;
 use Prophecy\Exception\InvalidArgumentException;
 
@@ -155,8 +156,7 @@ class ClassNode
             ));
         }
 
-        $propertyNode = new PropertyNode($property);
-        $propertyNode->setVisibility($visibility);
+        $propertyNode = new PropertyNode($property, $visibility, new BuiltinType('mixed'));
 
         $this->properties[$property] = $propertyNode;
     }

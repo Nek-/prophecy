@@ -16,7 +16,6 @@ use Prophecy\Doubler\Generator\Node\ArgumentTypeNode;
 use Prophecy\Doubler\Generator\Node\ClassNode;
 use Prophecy\Doubler\Generator\Node\MethodNode;
 use Prophecy\Doubler\Generator\Node\PropertyNode;
-use Prophecy\Doubler\Generator\Node\PropertyTypeNode;
 use Prophecy\Doubler\Generator\Node\Type\ObjectType;
 
 /**
@@ -51,7 +50,7 @@ class ProphecySubjectPatch implements ClassPatchInterface
             new PropertyNode(
                 'objectProphecyClosureContainer',
                 'private',
-                new PropertyTypeNode('Prophecy\Doubler\ObjectProphecyClosureContainer')
+                new ObjectType('Prophecy\Doubler\ObjectProphecyClosureContainer')
             )
         );
 

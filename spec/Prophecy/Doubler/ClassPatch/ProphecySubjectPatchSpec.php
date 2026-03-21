@@ -7,9 +7,9 @@ use Prophecy\Argument;
 use Prophecy\Doubler\Generator\Node\ClassNode;
 use Prophecy\Doubler\Generator\Node\MethodNode;
 use Prophecy\Doubler\Generator\Node\PropertyNode;
-use Prophecy\Doubler\Generator\Node\PropertyTypeNode;
 use Prophecy\Doubler\Generator\Node\ReturnTypeNode;
 use Prophecy\Doubler\Generator\Node\Type\BuiltinType;
+use Prophecy\Doubler\Generator\Node\Type\ObjectType;
 
 class ProphecySubjectPatchSpec extends ObjectBehavior
 {
@@ -35,7 +35,7 @@ class ProphecySubjectPatchSpec extends ObjectBehavior
             new PropertyNode(
                 'objectProphecyClosureContainer',
                 'private',
-                new PropertyTypeNode('Prophecy\Doubler\ObjectProphecyClosureContainer')
+                new ObjectType('Prophecy\Doubler\ObjectProphecyClosureContainer')
             )
         );
 
@@ -60,7 +60,7 @@ class ProphecySubjectPatchSpec extends ObjectBehavior
             new PropertyNode(
                 'objectProphecyClosureContainer',
                 'private',
-                new PropertyTypeNode('Prophecy\Doubler\ObjectProphecyClosureContainer')
+                new ObjectType('Prophecy\Doubler\ObjectProphecyClosureContainer')
             )
         );
 

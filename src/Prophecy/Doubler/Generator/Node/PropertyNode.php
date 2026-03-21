@@ -11,24 +11,25 @@
 
 namespace Prophecy\Doubler\Generator\Node;
 
+use Prophecy\Doubler\Generator\Node\Type\TypeInterface;
 use Prophecy\Exception\InvalidArgumentException;
 
 /**
  * Property node.
  */
-class PropertyNode
+final class PropertyNode
 {
     private string $name;
 
     /** @phpstan-var 'public'|'private'|'protected' */
     private string $visibility;
 
-    private PropertyTypeNode $typeNode;
+    private TypeInterface $typeNode;
 
     /**
      * @phpstan-param 'public'|'private'|'protected' $visibility
      */
-    public function __construct(string $name, string $visibility = 'public', PropertyTypeNode $typeNode = new PropertyTypeNode())
+    public function __construct(string $name, string $visibility, TypeInterface $typeNode)
     {
         $this->name = $name;
         $this->setVisibility($visibility);
@@ -44,19 +45,11 @@ class PropertyNode
     }
 
     /**
-     * @return PropertyTypeNode
+     * @return TypeInterface
      */
-    public function getTypeNode(): PropertyTypeNode
+    public function getTypeNode(): TypeInterface
     {
         return $this->typeNode;
-    }
-
-    /**
-     * @return void
-     */
-    public function setTypeNode(PropertyTypeNode $typeNode): void
-    {
-        $this->typeNode = $typeNode;
     }
 
     /**

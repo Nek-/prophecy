@@ -33,9 +33,9 @@ class ClassCodeGeneratorSpec extends ObjectBehavior
         $class->getInterfaces()->willReturn(array(
             'Prophecy\Doubler\Generator\MirroredInterface', 'ArrayAccess', 'ArrayIterator',
         ));
-        $name = new PropertyNode('name');
+        $name = new PropertyNode('name', 'public', new BuiltinType('mixed'));
         $name->setVisibility('public');
-        $email = new PropertyNode('email');
+        $email = new PropertyNode('email', 'public', new BuiltinType('mixed'));
         $email->setVisibility('private');
         $class->getPropertyNodes()->willReturn(array('name' => $name, 'email' => $email));
         $class->getMethods()->willReturn(array($method1, $method2, $method3, $method4, $method5));
@@ -125,8 +125,8 @@ class ClassCodeGeneratorSpec extends ObjectBehavior
         $expected = <<<'PHP'
 namespace  {
 class CustomClass extends \RuntimeException implements \Prophecy\Doubler\Generator\MirroredInterface, \ArrayAccess, \ArrayIterator {
-public $name;
-private $email;
+public mixed $name;
+private mixed $email;
 
 public static function getName(array $fullname, \ReflectionClass $class, object $instance): string|null {
 return $this->name;

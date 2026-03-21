@@ -18,7 +18,7 @@ namespace Prophecy\Doubler;
  *
  * @noinspection PhpUnused
  */
-class ObjectProphecyClosureContainer
+final class ObjectProphecyClosureContainer
 {
     /**
      * @var \Closure

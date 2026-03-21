@@ -7,7 +7,6 @@ use Fixtures\Prophecy\ReturningFinalClass;
 use PHPUnit\Framework\Attributes\Test;
 use PHPUnit\Framework\TestCase;
 use Prophecy\Doubler\DoubleInterface;
-use Prophecy\Doubler\Generator\ClassMirror;
 use Prophecy\Exception\Prophecy\MethodProphecyException;
 use Prophecy\Prophecy\ProphecySubjectInterface;
 use Prophecy\Prophet;
